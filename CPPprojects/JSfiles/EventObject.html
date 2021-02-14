@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p > this is my App</p>
+    <button id = 'firstId'>click Me</button>
+  <script>
+
+        const firstId =  document.getElementById('firstId');
+        const change = ()=>
+        {
+            console.log (alert("dont click me"));
+            // console.log(event);
+            // console.log (event.target);
+            console.log(event.type) ;
+        }
+    firstId.addEventListener ('click' , change);
+  </script>
+</body>
+</html>

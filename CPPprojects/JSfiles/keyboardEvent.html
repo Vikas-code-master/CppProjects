@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p> A function will be triggered when i press any key on keyboard</p>
+            <br/>
+            <input type = 'text' class = ' effet' onkeypress="keypress()" onkeypress="keydown()"
+            onkeyup="keyup()">
+            <p id = "keys" ></p>
+        </div>
+    </div>
+<script>
+    const keypress = ()=> {
+        document.getElementById ('keys').innerHTML = `u press ${event.key} and code is ${event.code}` ;}
+    // const keyup = ()=>
+    // {
+    //     document.getElementById ('keys').innerHTML = `u press ${event.key} and code is ${event.code}` ;
+    // }
+</script>
+</body>
+</html>
